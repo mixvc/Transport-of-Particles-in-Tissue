@@ -1,0 +1,25 @@
+# (NOTE: The model code is written for the Ubuntu (Linux) platform. It is compatible with the gsl package version: gsl-2.1)
+
+
+
+# INSTRUCTIONS FOR INSTALLATION of the gsl LIBRARY
+# Step 1: Download and save gsl-2.1.tar.gz in the model home directory (the current directory containing this README.txt and main.cpp files). (Download link: ftp://ftp.gnu.org/gnu/gsl/)
+
+# Step 2: Install GSL: on a linux terminal, change directory to the model home directory. Execute the following command to insall the GSL package: 
+
+. ./install.sh
+
+
+# INSTRUCTION for COMPILING CODE and RUNNING SIMULATION
+# While in the model home directory, on the terminal, execute the following command to compile the code and run simulation. 
+
+. ./exe.sh 
+
+
+# INSTRUCTION ABOUT THE OUTPUT FILES 
+#Note: The simulation will take 5-10 minutes on a standard desktop. Till then, it may remain not produce any output on the terminal. Once the simulaiton completes, it will generate five different excel files:  particle11_travelpath.xlsx, particle2_travelpath.xlsx, particle3_travelpath.xlsx, particle4_travelpath.xlsx, and particle5_travelpath.xlsx; and two text files: cell_center_positions.txt and particle_capture_cell_identity.txt. The result in each exel file will contain the simulated travel path information for one nanoparticle. For example, in particle1_travelpath.xlsx, column A represents time (seconds), column B represents X-coordinate of particle 1, and column C represents Y-coordinate of particle 1, etc. The cell_center_positions.txt will contain the position of the center of the cells in the rectangular tissue domain. The particle_capture_cell_identity.txt will contain the identity of any cell if it captures any of the five particles. 
+
+
+
+#INSTRUCTION ABOUT CHANGING PARAMETERS 
+#The parameter block includes line 13 through line 26 of main.cpp. Beside each parameter, a brief comment is provided describing the parameter. The values of these parameters can be modified. 
